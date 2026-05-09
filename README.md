@@ -2,7 +2,7 @@
 
 A simple library that provides standard Unicode [emoji](http://en.wikipedia.org/wiki/Emoji) support across all platforms.
 
-**Twemoji v15.1** adheres to the [Unicode 15.1 spec](https://unicode.org/versions/Unicode15.1.0/) and supports the [Emoji 15.1 spec](https://www.unicode.org/reports/tr51/tr51-25.html). _We do not support custom emoji._
+**Twemoji v17.0** adheres to the [Unicode 17.0 spec](https://unicode.org/versions/Unicode17.0.0/) and supports the [Emoji 17.0 spec](https://www.unicode.org/reports/tr51/tr51-29.html). _We do not support custom emoji._
 
 The Twemoji library offers support for all Unicode-defined emoji which are recommended for general interchange (RGI).
 
@@ -15,14 +15,14 @@ Default CDN support is provided via [jsDelivr](https://www.jsdelivr.com/).
 Use the following in the `<head>` tag of your HTML document(s):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/jbmagination/twemoji-mutant@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/suprstarrd/twemoji-mutant@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 ```
 
 This guarantees that you will always use the latest version of the library.
 
 If, instead, you'd like to include the latest version explicitly, you can add the following tag:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/jbmagination/twemoji-mutant@15.1.0m2/dist/twemoji.min.js" integrity="sha384-XEW27obBOE6RdIsopOXvAyXQrsSuiyn9Xm1nXKHfZeRia9eZteAjpD19a3xP9sPh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/suprstarrd/twemoji-mutant@17.0.3+m1/dist/twemoji.min.js" crossorigin="anonymous"></script>
 ```
 
 ## API
@@ -246,6 +246,7 @@ However, we consider the guide a bit onerous and as a project, will accept a men
 * Marcus Kazmierczak (WordPress)
 * Kevin VQ Dam (ex-Discord)
 * Gica Tam (Discord)
+* Ben Olson (Discord)
 
 The goal of this project is to simply provide emoji for everyone. We definitely welcome improvements and fixes, but we may not merge every pull request suggested by the community due to the simple nature of the project.
 

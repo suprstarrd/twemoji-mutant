@@ -1,9 +1,9 @@
 {
-  "version": "15.1.0m2",
+  "version": "17.0.3+m1",
   "name": "@twemoji/api",
   "license": "MIT AND CC-BY-4.0",
   "description": "A Unicode standard based way to implement emoji across all platforms.",
-  "homepage": "https://github.com/jbmagination/twemoji-mutant",
+  "homepage": "https://github.com/suprstarrd/twemoji-mutant",
   "keywords": [
     "emoji",
     "DOM",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jbmagination/twemoji-mutant.git"
+    "url": "git://github.com/suprstarrd/twemoji-mutant.git"
   },
   "main": "./dist/twemoji.npm.js",
   "module": "./dist/twemoji.esm.js",
@@ -36,7 +36,7 @@
     "prepublishOnly": "run-s build test deploy"
   },
   "dependencies": {
-    "@twemoji/parser": "15.1.0",
+    "@twemoji/parser": "17.0.1",
     "fs-extra": "^8.0.1",
     "jsonfile": "^5.0.0",
     "sharp": "^0.33.5",
