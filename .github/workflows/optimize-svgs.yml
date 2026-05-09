@@ -30,7 +30,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         if: ${{steps.svgo.outputs.DID_OPTIMIZE}}
         with:
-          commit_message: Optimize ${{steps.svgo.outputs.OPTIMIZED_COUNT}} SVG(s)
+          commit_message: Optimize ${{steps.svgo.outputs.OPTIMIZED_COUNT}} SVG(s) [no ci]
           file_pattern: '*.svg'
       - name: Comment on Pull Request
         uses: thollander/actions-comment-pull-request@v2
