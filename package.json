@@ -1,7 +1,7 @@
 {
   "version": "17.0.3+m1",
   "name": "@twemoji/api",
-  "license": "MIT AND CC-BY-4.0",
+  "license": "MIT AND CC-BY-NC-SA-4.0",
   "description": "A Unicode standard based way to implement emoji across all platforms.",
   "homepage": "https://github.com/suprstarrd/twemoji-mutant",
   "keywords": [
