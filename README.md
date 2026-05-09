@@ -1,7 +1,10 @@
-# Twitter Emoji (Twemoji)
+# Mutant Standard Twemoji
 
 A simple library that provides standard Unicode [emoji](http://en.wikipedia.org/wiki/Emoji) support across all platforms.
 
+*This README is heavily based off of the Twemoji README and still needs some work. Thanks for your patience!*
+
+<!--
 **Twemoji v17.0** adheres to the [Unicode 17.0 spec](https://unicode.org/versions/Unicode17.0.0/) and supports the [Emoji 17.0 spec](https://www.unicode.org/reports/tr51/tr51-29.html). _We do not support custom emoji._
 
 The Twemoji library offers support for all Unicode-defined emoji which are recommended for general interchange (RGI).
@@ -24,6 +27,7 @@ If, instead, you'd like to include the latest version explicitly, you can add th
 ```html
 <script src="https://cdn.jsdelivr.net/gh/suprstarrd/twemoji-mutant@17.0.3+m1/dist/twemoji.min.js" crossorigin="anonymous"></script>
 ```
+-->
 
 ## API
 
@@ -55,7 +59,7 @@ var img = div.querySelector('img');
 // note the div is preserved
 img.parentNode === div; // true
 
-img.src;        // https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/72x72/2764.png
+img.src;        // https://cdn.jsdelivr.net/gh/suprstarrd/twemoji-mutant@latest/assets/72x72/2764.png
 img.alt;        // \u2764\uFE0F
 img.className;  // emoji
 img.draggable;  // false
@@ -130,7 +134,7 @@ twemoji.parse(genericNode, {
 });
 ```
 
-This will generate urls such `https://cdn.jsdelivr.net/gh/jdecked/twemoji@latest/assets/svg/2764.svg` instead of using a specific size based image.
+This will generate urls such `https://cdn.jsdelivr.net/gh/suprstarrd/twemoji-mutant@latest/assets/svg/2764.svg` instead of using a specific size based image.
 
 ## Utilities
 
@@ -208,7 +212,7 @@ If you're still using our V1 API, you can read our legacy documentation [here](L
 
 The contributing documentation can be found [here](CONTRIBUTING.md).
 
-## Attribution
+## Attribution template
 ### HTML
 ```html
 <div about="#ms-emoji" typeof="cc:Work" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a href="https://mutant.tech/"><span property="dc:title">Mutant Standard emoji</span></a> © 2019, 2020, 2022, 2023, 2024 by <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://nocturne.works/">Caius Nocturne</a> is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a> license. To view a copy of this license, visit <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>. <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Attribution" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NonCommercial" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="ShareAlike" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a></div> <div about="#twemoji" typeof="cc:Work" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a href="https://github.com/jdecked/twemoji"><span property="dc:title">Twemoji</span></a> © 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 by <a property="cc:attributionName" rel="cc:attributionURL" href="https://about.x.com/">Twitter, Inc.</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://about.x.com/">X Corp.</a>, Jason Sofonia, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://macaw.social/@jdecked">Justine De Caires</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://bryanhaggerty.com/">Bryan Haggerty</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://github.com/n8downs">Nathan Downs</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://github.com/twuttke">Tom Wuttke</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://webreflection.medium.com/">Andrea Giammarchi</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://moc.co/">Joen Asmussen</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://mkaz.blog/">Marcus Kazmierczak</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://www.kevinvqdam.com/">Kevin VQ Dam</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://www.gicatam.com/">Gica Tam</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://benolsonsketches.artstation.com/">Ben Olson</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://parsatajik.com">Parsa Tajik</a>, <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://www.striedinger.co">Hugo Striedinger</a>, and <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://github.com/jdecked/twemoji/graphs/contributors">other contributors</a> is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> license. To view a copy of this license, visit <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>. <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Attribution" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>.</div>
@@ -216,11 +220,10 @@ The contributing documentation can be found [here](CONTRIBUTING.md).
 
 ### Markdown
 ```markdown
-[Mutant Standard emoji](https://mutant.tech/) © 2019, 2020, 2022, 2023, 2024 by [Caius Nocturne](https://nocturne.works/) is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/. [Twemoji](https://github.com/jdecked/twemoji) © 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 by [Twitter, Inc.](https://about.x.com/), [X Corp.](https://about.x.com/), Jason Sofonia, [Justine De Caires](https://macaw.social/@jdecked), [Bryan Haggerty](https://bryanhaggerty.com/), [Nathan Downs](https://github.com/n8downs), [Tom Wuttke](https://github.com/twuttke), [Andrea Giammarchi](https://webreflection.medium.com/), [Joen Asmussen](https://moc.co/), [Marcus Kazmierczak](https://mkaz.blog/), [Kevin VQ Dam](https://www.kevinvqdam.com/), [Gica Tam](https://www.gicatam.com/), [Ben Olson](https://benolsonsketches.artstation.com/), [Parsa Tajik](https://parsatajik.com), [Hugo Striedinger](https://www.striedinger.co), and [other contributors](https://github.com/jdecked/twemoji/graphs/contributors) is licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/.
+[Mutant Standard emoji](https://mutant.tech/) © 2019, 2020, 2022, 2023, 2024 by [Caius Nocturne](https://nocturne.works/) is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. To view a copy of this license, visit [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/). [Twemoji](https://github.com/jdecked/twemoji) © 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 by [Twitter, Inc.](https://about.x.com/), [X Corp.](https://about.x.com/), Jason Sofonia, [Justine De Caires](https://macaw.social/@jdecked), [Bryan Haggerty](https://bryanhaggerty.com/), [Nathan Downs](https://github.com/n8downs), [Tom Wuttke](https://github.com/twuttke), [Andrea Giammarchi](https://webreflection.medium.com/), [Joen Asmussen](https://moc.co/), [Marcus Kazmierczak](https://mkaz.blog/), [Kevin VQ Dam](https://www.kevinvqdam.com/), [Gica Tam](https://www.gicatam.com/), [Ben Olson](https://benolsonsketches.artstation.com/), [Parsa Tajik](https://parsatajik.com), [Hugo Striedinger](https://www.striedinger.co), and [other contributors](https://github.com/jdecked/twemoji/graphs/contributors) is licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. To view a copy of this license, visit [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/).
 ```
 
-[Mutant Standard emoji](https://mutant.tech/) © 2019, 2020, 2022, 2023, 2024 by [Caius Nocturne](https://nocturne.works/) is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/. [Twemoji](https://github.com/jdecked/twemoji) © 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 by [Twitter, Inc.](https://about.x.com/), [X Corp.](https://about.x.com/), Jason Sofonia, [Justine De Caires](https://macaw.social/@jdecked), [Bryan Haggerty](https://bryanhaggerty.com/), [Nathan Downs](https://github.com/n8downs), [Tom Wuttke](https://github.com/twuttke), [Andrea Giammarchi](https://webreflection.medium.com/), [Joen Asmussen](https://moc.co/), [Marcus Kazmierczak](https://mkaz.blog/), [Kevin VQ Dam](https://www.kevinvqdam.com/), [Gica Tam](https://www.gicatam.com/), [Ben Olson](https://benolsonsketches.artstation.com/), [Parsa Tajik](https://parsatajik.com), [Hugo Striedinger](https://www.striedinger.co), and [other contributors](https://github.com/jdecked/twemoji/graphs/contributors) is licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/.
-
+<!--
 ## Community Projects
 
 * [Twemoji Cheatsheet](https://twemoji-cheatsheet.vercel.app) by [@ShahriarKh](https://github.com/ShahriarKh): An easy-to-use cheatsheet for exploring, copying and downloading emojis!
@@ -240,31 +243,12 @@ The contributing documentation can be found [here](CONTRIBUTING.md).
 * [LaTeX Twemoji](https://gitlab.com/rossel.jost/latex-twemojis) by [@rossel.jost](https://gitlab.com/rossel.jost): Use Twemoji in LaTeX.
 * [PHP Twemoji](https://github.com/Astrotomic/php-twemoji) by [@Astrotomic](https://github.com/Astrotomic): Use twemoji within your PHP website project's by replacing standard Emoji with twemoji urls.
 * [Custom Twemoji API](https://github.com/custom-twemoji/custom-twemoji-api) by [@blakegearin](https://github.com/blakegearin): An API for fetching Twemoji faces and creating Twemoji face mashups.
-
-## Committers and Contributors
-
-* Justine De Caires (ex-Twitter)
-* Jason Sofonia (ex-Twitter)
-* Bryan Haggerty (ex-Twitter)
-* Nathan Downs (ex-Twitter)
-* Tom Wuttke (ex-Twitter)
-* Andrea Giammarchi (ex-Twitter)
-* Joen Asmussen (WordPress)
-* Marcus Kazmierczak (WordPress)
-* Kevin VQ Dam (ex-Discord)
-* Gica Tam (Discord)
-* Ben Olson (Discord)
-
-The goal of this project is to simply provide emoji for everyone. We definitely welcome improvements and fixes, but we may not merge every pull request suggested by the community due to the simple nature of the project.
-
-The rules for contributing are available in the [`CONTRIBUTING.md`](CONTRIBUTING.md) file.
-
-Thank you to all of our [contributors](https://github.com/jdecked/twemoji/graphs/contributors).
+-->
 
 ## License
 
-See the [LICENSE](LICENSE) and [LICENSE-GRAPHICS](LICENSE-GRAPHICS) files for full license texts.
+See the [LICENSE](LICENSE),  [LICENSE-MUTANT-GRAPHICS](LICENSE-MUTANT-GRAPHICS), [LICENSE-TWEMOJI-GRAPHICS](LICENSE-TWEMOJI-GRAPHICS) files for full license texts.
 
 Code licensed under the MIT License: <http://opensource.org/licenses/MIT>
 
-Graphics licensed under CC-BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
+[Mutant Standard emoji](https://mutant.tech/) © 2019, 2020, 2022, 2023, 2024 by [Caius Nocturne](https://nocturne.works/) is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. To view a copy of this license, visit [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/). [Twemoji](https://github.com/jdecked/twemoji) © 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 by [Twitter, Inc.](https://about.x.com/), [X Corp.](https://about.x.com/), Jason Sofonia, [Justine De Caires](https://macaw.social/@jdecked), [Bryan Haggerty](https://bryanhaggerty.com/), [Nathan Downs](https://github.com/n8downs), [Tom Wuttke](https://github.com/twuttke), [Andrea Giammarchi](https://webreflection.medium.com/), [Joen Asmussen](https://moc.co/), [Marcus Kazmierczak](https://mkaz.blog/), [Kevin VQ Dam](https://www.kevinvqdam.com/), [Gica Tam](https://www.gicatam.com/), [Ben Olson](https://benolsonsketches.artstation.com/), [Parsa Tajik](https://parsatajik.com), [Hugo Striedinger](https://www.striedinger.co), and [other contributors](https://github.com/jdecked/twemoji/graphs/contributors) is licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. To view a copy of this license, visit [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/).
