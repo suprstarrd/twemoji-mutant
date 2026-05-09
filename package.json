@@ -1,9 +1,9 @@
 {
-  "version": "14.1.2",
+  "version": "17.0.3+m1",
   "name": "@twemoji/api",
-  "license": "MIT AND CC-BY-4.0",
+  "license": "MIT AND CC-BY-NC-SA-4.0",
   "description": "A Unicode standard based way to implement emoji across all platforms.",
-  "homepage": "https://github.com/jdecked/twemoji",
+  "homepage": "https://github.com/suprstarrd/twemoji-mutant",
   "keywords": [
     "emoji",
     "DOM",
@@ -23,25 +23,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jdecked/twemoji.git"
+    "url": "git://github.com/suprstarrd/twemoji-mutant.git"
   },
   "main": "./dist/twemoji.npm.js",
   "module": "./dist/twemoji.esm.js",
   "unpkg": "./dist/twemoji.min.js",
+  "types": "./index.d.ts",
   "scripts": {
     "build": "./scripts/build.js",
     "deploy": "./scripts/deploy.sh gh-pages",
     "test": "phantomjs ./src/test/testrunner.js",
-    "prepublishOnly": "run-s build test deploy"
+    "prepublishOnly": "run-s build test"
   },
   "dependencies": {
+    "@twemoji/parser": "17.0.1",
     "fs-extra": "^8.0.1",
     "jsonfile": "^5.0.0",
-    "twemoji-parser": "14.0.0",
+    "sharp": "^0.33.5",
     "universalify": "^0.1.2"
   },
   "files": [
     "dist/twemoji*.js",
+    "dist/svg/*.svg",
     "index.d.ts"
-  ]
+  ],
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

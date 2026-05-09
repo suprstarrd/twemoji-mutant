@@ -9,7 +9,7 @@ var fs = require('fs');
 var http = require('http');
 var path = require('path');
 var Utils = require('./utils');
-var regex = require('twemoji-parser/dist/lib/regex').default;
+var regex = require('@twemoji/parser/dist/lib/regex').default;
 var { version } = require('../package.json');
 
 function file(which) {
@@ -47,13 +47,13 @@ function createTwemoji() {
         /////////////////////////
 
           // default assets url, by default will be jsDelivr CDN
-          base: 'https://cdn.jsdelivr.net/gh/jdecked/twemoji@$VERSION/assets/',
+          base: 'https://cdn.jsdelivr.net/gh/jbmagination/twemoji-mutant@$VERSION/assets/',
 
           // default assets file extensions, by default '.png'
           ext: '.png',
 
           // default assets/folder size, by default "72x72"
-          // available via Twitter CDN: 72
+          // available via jsDelivr: 72
           size: '72x72',
 
           // default class name, by default 'emoji'
@@ -294,7 +294,7 @@ function createTwemoji() {
 
       /**
        * Default callback used to generate emoji src
-       *  based on Twitter CDN
+       *  based on jsDelivr CDN
        * @param   string    the emoji codepoint string
        * @param   string    the default size to use, i.e. "36x36"
        * @return  string    the image source to use
@@ -462,7 +462,7 @@ function createTwemoji() {
             // with its image counter part
             ret = '<img '.concat(
               'class="', options.className, '" ',
-              'draggable="false" ',
+              'draggable="false" loading="lazy"',
               // needs to preserve user original intent
               // when variants should be copied and pasted too
               'alt="',
@@ -593,15 +593,7 @@ function createTwemoji() {
       .replace(/^    /gm, '')
       // add the RegExp in the right place
       .replace('re = /twemoji/', `re = ${regex.toString()}`)
-      .replace('$VERSION', version)
-      // add the full license
-      .replace('/*! (C) Twitter Inc. */',
-        '/*! (C) Twitter Inc. *//*\n' +
-        fs.readFileSync(file('LICENSE')).toString().replace(
-          /^./gm, '   '
-        ) +
-        '\n  */'
-      ) + '());');
+      .replace('$VERSION', version) + '());');
 
 }
 
